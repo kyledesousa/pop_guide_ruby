@@ -1,2 +1,3 @@
-# pop_guide_ruby
-POP Guide Ruby version
+# README
+
+please no dashes in *any* filename, use underscores to separate words

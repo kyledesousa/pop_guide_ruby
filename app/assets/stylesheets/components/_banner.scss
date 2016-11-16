@@ -1,0 +1,95 @@
+.hero-bg {
+  margin-top: 85px;
+  background: #222;
+  height: 100%;
+  max-height: 750px;
+  min-height: 660px;
+  width: 100%;
+  clear: both;
+  position: relative;
+  background: url(bg-header.png) no-repeat bottom center;
+  background-size: cover;
+
+  @media (min-width: 641px) and (max-width: 1024px) {
+    background: url(bg-header.png) no-repeat bottom center;
+    background-size: cover;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1500px) {
+    background: url(bg-header.png) no-repeat bottom center;
+    background-size: cover;
+  }
+
+  @media (min-width: 1501px) {
+    background: url(bg-header.png) no-repeat bottom center;
+    background-size: cover;
+  }
+
+  .hero-content {
+    text-align: center;
+    position: relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -ms-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    box-pack: center;
+    height: 100%;
+    line-height: 7rem;
+
+    h2 {
+      font-family: 'Venti';
+      color: #fff;
+      text-align: center;
+      text-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+      @include centerer;
+      margin: 0 0 20px;
+      font-weight: 700;
+      z-index: 2;
+      text-transform: uppercase;
+
+      @include breakpoint(small) {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        top: 70%;
+
+      }
+      @include breakpoint(medium) {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        top: 65%;
+
+      }
+      @include breakpoint(large) {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        top: 65%;
+      }
+      @include breakpoint(xlarge) {
+        font-size: 7rem;
+        line-height: 7rem;
+        top: 65%;
+      }
+    }
+
+    a.btn {
+      text-decoration: none;
+      color: #005c9e;
+      font-size: 1.2em;
+      border: 1px solid #fff;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 5px;
+    }
+
+    .iphone {
+      @include centerer;
+      z-index: 1;
+    }
+
+  }
+
+}

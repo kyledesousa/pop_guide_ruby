@@ -1,0 +1,85 @@
+
+h1, h2, h3, h4, h5, h6,
+.c-h1, .c-h2, .c-h3, .c-h4, .c-h5, .c-h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: $acc1;
+  display: block;
+}
+
+h1, .c-h1 {
+  font-size: 48px;
+  line-height: 58px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2, .c-h2 {
+  font-size: 34px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+h2 small, .c-h2 small {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+h3, .c-h3 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #30373b;
+}
+
+h3 small, .c-h3 small {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 700;
+}
+
+h4, .c-h4 {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+}
+
+h5, .c-h5 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+h6, .c-h6 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
+
+.app-list {
+  list-style: none;
+  margin: 0px;
+  padding: 0;
+
+  li {
+    padding: 5px 0;
+    display: block;
+    margin: 0px;
+    border-bottom: 1px solid $acc4;
+
+    &:before {
+      padding-right: 22px;
+      content: "\f061";
+      font-family: FontAwesome;
+      font-size: 22px;
+      color: $acc1;
+    }
+  }
+
+  :last-child {
+    border: none;
+  }
+
+}

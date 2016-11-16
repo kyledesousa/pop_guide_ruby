@@ -1,0 +1,195 @@
+
+footer {
+
+  background: $acc1;
+  padding-top: 75px;
+
+
+
+  .error {
+    color: #000 !important;
+    font-size: 12px !important;
+  }
+
+  .button.btn-footer {
+    background: $acc2;
+    color: $acc5;
+  }
+
+  .btn-footer {
+    @include breakpoint(small only) {
+      @include button-expand();
+    }
+  }
+
+  p, h3, h5, a {
+    color: $acc5;
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+    :hover {
+      color: $acc3;
+    }
+  }
+
+
+  .tt-address-icon {
+    float: left;
+    font-size: 18px;
+    color: $acc5;
+  }
+
+  h5 {
+
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: $fontfam;
+    @include breakpoint(small only) {
+      text-align: center;
+    }
+  }
+
+  .tt-address-info {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400;
+    color: $acc5;
+    padding-left: 28px;
+    a {
+      color: $acc5;
+      &:hover {
+        color: $acc5;
+      }
+    }
+  }
+
+  .tt-social {
+    list-style: none;
+    li {
+      float: left;
+      margin-right: 22px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    a {
+      font-size: 18px;
+      color: $acc5;
+      &:hover {
+        color: $acc3;
+
+      }
+    }
+  }
+
+  .tt-footer-form {
+    label {
+      color: $acc5;
+    }
+
+    input[type="text"],  input[type="email"], textarea  {
+      margin-bottom: 0px;
+    }
+
+    .c-area {
+      margin-bottom: 20px;
+      height: 85px;
+      font-size: 1.3rem;
+    }
+  }
+
+  .tt-footer-copy {
+    border-top: 1px solid #40474a;
+    text-align: center;
+    padding: 18px 0;
+  }
+
+  .tt-footer-list {
+    list-style: none;
+    li {
+      margin-bottom: 22px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+    }
+    a {
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 400;
+      color: $acc5;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+
+}
+
+@media (max-width: 991px) {
+  .tt-footer {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tt-footer {
+    padding-top: 30px;
+  }
+}
+
+.vox {
+  @include background-image('vox-logo-w');
+  background-size: cover;
+  display: block;
+  height: 141px;
+  width: 130px;
+  opacity: 0.7;
+  @include transition(opacity .25s ease-in-out);
+  &:hover {
+    opacity: 1;
+  }
+  @include breakpoint(small only) {
+    margin: 0 auto;
+  }
+}
+
+
+
+#success, #error {
+  display: none;
+  border: 1px solid #fff;
+  @include border-radius(5px);
+  padding: 25px;
+  text-align: center;
+
+}
+
+// #success span, #error span {
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   width: 100%
+// }
+
+#success, #error {
+  color: $acc3;
+  .fa.fa-envelope-o {
+    color: #fff;
+    display: block;
+    margin: 0 auto 25px;
+    font-size: 65px;
+    text-align: center;
+  }
+}
+
+
+
+#success span p {
+  color: $acc3;
+}
+
+#error span p {
+  color: #c0392b;
+}

@@ -1,0 +1,110 @@
+.bg-1 {
+  background: $acc5 none repeat scroll 0 0;
+}
+
+.button-google {
+  @include background-image('android-app-on-google-play');
+  background-size: cover;
+  width: 180px;
+  height: 59px;
+
+}
+
+.button-apk {
+  @include background-image('download-popguide-android-apk');
+  background-size: cover;
+  width: 180px;
+  height: 59px;
+}
+
+
+
+.button-itunes {
+  @include background-image('itunes');
+  background-size: cover;
+  width: 180px;
+  height: 59px;
+}
+
+
+.tt-banner {
+  position: relative;
+}
+
+.tt-banner-title {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.tt-banner-title:hover {
+  color: $acc1;
+}
+
+.tt-banner-info {
+  padding-top: 80px;
+  padding-bottom: 86px;
+}
+
+.tt-banner-info .simple-text {
+  margin-bottom: 44px;
+}
+
+.tt-banner-img {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  max-width: 39%;
+  height: auto;
+}
+
+.tt-banner-btn {
+  font-size: 0;
+  margin-bottom: -15px;
+}
+
+.tt-banner-btn a {
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.tt-banner-form {
+  margin-bottom: 50px;
+}
+
+.tt-banner.style-2 .tt-banner-img {
+  max-width: 45%;
+  left: 0;
+}
+
+@media (max-width: 991px) {
+  .tt-banner-info {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .tt-banner-img {
+    left: 0;
+  }
+  .tt-banner.style-2 .tt-banner-img {
+    max-width: 37%;
+  }
+  .tt-banner-info .simple-text {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .tt-banner-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .tt-banner-img {
+    display: none;
+  }
+  .tt-banner-form {
+    margin-bottom: 0px;
+  }
+  .tt-banner-form input[type="text"] {
+    margin-bottom: 30px;
+  }
+}

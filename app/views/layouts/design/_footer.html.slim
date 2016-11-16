@@ -1,0 +1,23 @@
+footer
+  #contact
+  .row
+    .columns.medium-6.large-6
+      h5 Contacts
+      .spacer-25
+      a.vox.ir href="www.voxtours.com" target="_blank" title="www.voxtours.com"  Vox Tours
+      .spacer-25
+      p
+        | Pop Guide App is a trademark of Vox S.p.A.
+        a href="mailto:info@voxtours.com"  info@voxtours.com
+    .columns.medium-12.large-6
+      h5 Drop us a line
+      .spacer-25
+      .tt-footer-form
+        = render partial: 'design/forms/email_form'
+        #error
+          span
+          p Something went wrong, try refreshing and submitting the form again.
+        #success
+          span
+            i.fa.fa-envelope-o.fa-5 aria-hidden="true"
+          p Your message was sent successfully!

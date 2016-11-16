@@ -1,0 +1,16 @@
+form#contactForm.cmxform action="" method="post" name="contact"
+  fieldset
+    .row
+      .columns.medium-6
+        label for="cname"  Name (required, at least 2 characters)
+        input#cname minlength="2" name="name" required="" type="text" /
+      .columns.medium-6
+        label for="cemail"  E-Mail (required)
+        input#cemail name="email" required="" type="email" /
+    label for="ccomment"  Your Message (required)
+    textarea#ccomment name="comment" required=""
+    .spacer-25
+    .c-btn.type-1.full.color-2
+      input#submit.button.btn-footer name="submit" type="submit" value="Submit" /
+    javascript:
+      | $("#commentForm").validate();

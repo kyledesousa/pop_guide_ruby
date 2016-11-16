@@ -1,0 +1,45 @@
+{:uriI"Ñfile://app/assets/images/fav/manifest.json?type=application/json&id=b23ede0c96aab5decdd21b55a3ca80e08ea0a6172aa5214d6e3c8199d264763b:ET:load_pathI"app/assets/images;T:filenameI"(app/assets/images/fav/manifest.json;T:	nameI"fav/manifest;T:logical_pathI"fav/manifest.json;T:content_typeI"application/json;T:sourceI"–{
+ "name": "App",
+ "icons": [
+  {
+   "src": "\/android-icon-36x36.png",
+   "sizes": "36x36",
+   "type": "image\/png",
+   "density": "0.75"
+  },
+  {
+   "src": "\/android-icon-48x48.png",
+   "sizes": "48x48",
+   "type": "image\/png",
+   "density": "1.0"
+  },
+  {
+   "src": "\/android-icon-72x72.png",
+   "sizes": "72x72",
+   "type": "image\/png",
+   "density": "1.5"
+  },
+  {
+   "src": "\/android-icon-96x96.png",
+   "sizes": "96x96",
+   "type": "image\/png",
+   "density": "2.0"
+  },
+  {
+   "src": "\/android-icon-144x144.png",
+   "sizes": "144x144",
+   "type": "image\/png",
+   "density": "3.0"
+  },
+  {
+   "src": "\/android-icon-192x192.png",
+   "sizes": "192x192",
+   "type": "image\/png",
+   "density": "4.0"
+  }
+ ]
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"6file-digest://app/assets/images/fav/manifest.json;TTF:charsetI"
+utf-8;F:digest"%'Ï£Ë)~∑ˇ4Î8I≤ZEõ8EEj§–omñk5:lengthi–:dependencies_digest"%˝_VÕû¶˛yé±BBv(Öcœ˘Wıg¸è™√_O:idI"Eb23ede0c96aab5decdd21b55a3ca80e08ea0a6172aa5214d6e3c8199d264763b;F:
+mtimel+.cX

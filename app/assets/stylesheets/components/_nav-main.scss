@@ -1,0 +1,167 @@
+.logo {
+
+  @include breakpoint(small only) {
+    margin: 15px auto;
+    display: block;
+    float: none;
+  }
+
+  width: 195px;
+  height: auto;
+  display: inline-block;
+  float: left;
+  box-sizing: border-box;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .mtxt {
+    font-family: Venti;
+    font-weight: bold;
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    display: block;
+
+    .ch1txt {
+      @include transform(rotate(15deg));
+      display: inline-block;
+      color: $acc5;
+    }
+
+    .ch2txt {
+      display: inline-block;
+      color: $acc1 !important;
+    }
+
+    .ch3txt {
+      @include transform(rotate(15deg));
+      display: inline-block;
+      color: $acc5;
+    }
+
+  }
+  .stxt {
+    color: $acc5;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Venti;
+  }
+}
+
+nav {
+
+  top: 0; // Fix the menu to the top
+  position: fixed; // Fix the menu to the top
+  width: 100%;
+  background-color: $acc2;
+  color: $acc3;
+  z-index: 9999;
+  border-bottom: 1px solid $acc4;
+
+  ul {
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-top: 35px;
+    font-family: $fontfam;
+    @include breakpoint(small only) {
+      float: none;
+      display: none;
+      height: auto;
+    }
+
+    li {
+      font-family: $fontfam;
+      display: inline;
+      float: left;
+
+      @include breakpoint(small only) {
+        width: 100%;
+        float: right;
+        position: relative;
+      }
+
+      a {
+        font-family: $fontfam;
+        text-transform: uppercase;
+        display: inline-block;
+        text-decoration: none;
+        padding: 10px 15px;
+        color: $acc3;
+        font-weight: bold;
+        &:hover {
+          background-color: lighten($acc2, 10%);
+          color: $acc3;
+          @include breakpoint(small only) {
+            background-color: $acc3;
+            color: $acc2;
+          }
+        }
+        &.active {
+          background-color: lighten($acc2, 10%);
+          color: $acc3;
+          @include mui-fade(in, $duration: 10s);
+        }
+        @include breakpoint(small only) {
+          border-bottom: 1px solid lighten($acc2, 10%);
+          display: block;
+          text-align: left;
+          width: 100%;
+          text-indent: 25px;
+          color: $acc3;
+        }
+      }
+
+    }
+  }
+
+  a#openup {
+    display: none;
+  }
+
+  @include breakpoint(small only) {
+    a#openup:after {
+      color: $acc3;
+      font-family: FontAwesome;
+      content: "\f0c9";
+      font-size: 32px;
+      width: 35px;
+      height: 35px;
+      display: inline-block;
+      position: absolute;
+      right: 48px;
+      top: 35px;
+    }
+    a#openup {
+      display: block;
+      width: auto;
+
+      &:hover {
+        background-color: $acc3;
+        color: $acc1;
+      }
+    }
+  }
+
+}
+
+//nav
+
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+

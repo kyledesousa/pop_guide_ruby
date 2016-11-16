@@ -1,0 +1,62 @@
+$fontfam: 'Venti';
+
+@font-face {
+  font-family: 'Venti';
+  src: url('VentiCF-Medium.eot');
+  src: url('VentiCF-Medium.eot#iefix') format('embedded-opentype'),
+  url('VentiCF-Medium.woff2') format('woff2'),
+  url('VentiCF-Medium.woff') format('woff'),
+  url('VentiCF-Medium.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Venti';
+  src: url('VentiCF-MediumOblique.eot');
+  src: url('VentiCF-MediumOblique.eot#iefix') format('embedded-opentype'),
+  url('VentiCF-MediumOblique.woff2') format('woff2'),
+  url('ventiCF/VentiCF-MediumOblique.woff') format('woff'),
+  url('VentiCF-MediumOblique.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Venti';
+  src: url('VentiCF-Bold.eot');
+  src: url('VentiCF-Bold.eot#iefix') format('embedded-opentype'),
+  url('VentiCF-Bold.woff2') format('woff2'),
+  url('ventiCF/VentiCF-Bold.woff') format('woff'),
+  url('VentiCF-Bold.ttf')  format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Venti';
+  src: url('VentiCF-BoldOblique.eot');
+  src: url('VentiCF-BoldOblique.eot#iefix') format('embedded-opentype'),
+  url('VentiCF-BoldOblique.woff2') format('woff2'),
+  url('ventiCF/VentiCF-BoldOblique.woff') format('woff'),
+  url('VentiCF-BoldOblique.ttf')  format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Venti';
+  src: url('VentiCF-Light.eot');
+  src: url('VentiCF-Light.eot#iefix') format('embedded-opentype'),
+  url('VentiCF-Light.woff2') format('woff2'),
+  url('ventiCF/VentiCF-Light.woff') format('woff'),
+  url('VentiCF-Light.ttf')  format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Venti';
+  src: url('VentiCF-LightOblique.eot');
+  src: url('VentiCF-LightOblique.eot#iefix') format('embedded-opentype'),
+  url('VentiCF-LightOblique.woff2') format('woff2'),
+  url('ventiCF/VentiCF-LightOblique.woff') format('woff'),
+  url('VentiCF-LightOblique.ttf')  format('truetype');
+  font-weight: lighter;
+  font-style: italic;
+}

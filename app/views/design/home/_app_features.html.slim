@@ -1,0 +1,50 @@
+section#features.spacer
+  .row
+    .columns.small-12
+      .c-h1.text-center.is-animating App Features
+      .spacer-75
+  .row
+    .columns.medium-4
+      .tt-service-2
+        .tt-service-2-icon.tt-offer-link data-img="background-image: url(assets/img-apps/screen-01.jpg)"
+          .user-icon.is-animating
+        a.tt-service-2-title.c-h4 User Friendly
+        .simple-text.size-2
+          p We took special care to design an App with an extremely pleasant user experience, making its use very easy and intuitive.
+      .spacer-25
+      .tt-service-2
+        .tt-service-2-icon.tt-offer-link data-img="background-image: url(assets/img-apps/screen-02.jpg)"
+          .plane-icon
+        a.tt-service-2-title.c-h4 Works Offline
+        .simple-text.size-2
+          p Once downloaded, contents are easily accessible without Internet connection, so that high roaming costs are avoided.
+      .spacer-25
+    .columns.medium-4
+      .tt-offer
+        = image_tag("phone.png", :alt => "Pop Guide", :size => "767x406")
+        .tt-offer-screen style="background-image:url(assets/img-apps/screen-01.jpg)"
+    .columns.medium-4
+      .tt-service-2
+        .tt-service-2-icon.tt-offer-link data-img="background-image: url(assets/img-apps/screen-03.jpg)"
+          .coge-icon
+        a.tt-service-2-title.c-h4 Customizable
+        .simple-text.size-2
+          p With the insertion of logos and chosen colours we can adapt the appearance of the App according to your preferences.
+      .empty-space.marg-lg-b40.marg-xs-b30
+      .tt-service-2
+        .tt-service-2-icon.tt-offer-link data-img="background-image: url(assets/img-apps/screen-04.jpg)"
+          .audit-icon
+        a.tt-service-2-title.c-h4 Updates
+        .simple-text.size-2
+          p Updating content becomes much faster and can be done remotely. This allows you to be more flexible and adapt to new situations.
+      .empty-space.marg-xs-b30
+
+javascript:
+  $(".tt-offer-link").on({
+    mouseenter: function () {
+      $(this).closest('.row').find('.tt-offer-screen').attr('style', $(this).attr('data-img'));
+    },
+    mouseleave: function () {
+
+    }
+  });

@@ -1,0 +1,65 @@
+.tt-offer {
+  position: relative;
+}
+
+.tt-offer img {
+  width: 100%;
+}
+
+.tt-offer-screen {
+  position: absolute;
+  top: 13%;
+  left: 15%;
+  right: 15%;
+  padding-bottom: 125%;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+}
+
+@media (max-width: 767px) {
+  .tt-offer {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.coge-icon {
+  @include background-image('coge');
+  display: block;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto;
+
+}
+
+.user-icon {
+  @include background-image('user');
+  display: block;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto;
+}
+
+.plane-icon {
+  @include background-image('plane');
+  display: block;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto;
+}
+
+.audit-icon {
+  @include background-image('audit');
+  display: block;
+  height: 65px;
+  width: 65px;
+  margin: 0 auto;
+}
+
+.iphone-bg {
+  @include background-image('audit');
+}
